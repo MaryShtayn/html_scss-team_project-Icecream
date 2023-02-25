@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+
+  background-color: #84a178;
+}
+
+button,
+a {
+  cursor: url(../images/Cursor.png), auto;
+}
+
+.container {
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+// Анимация-Gallery
+@keyframes myImgAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  12.12% {
+    opacity: 1;
+  }
+
+  35.35% {
+    opacity: 1;
+  }
+
+  45.45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

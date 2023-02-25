@@ -1,0 +1,222 @@
+<!-- hero-header -->
+
+<header class="header" id="Home">
+  <div class="container header__container">
+    <div class="header-logo">
+      <svg class="header-logo__icon">
+        <use href="/src/images/icon_sprite.svg#logo"></use>
+      </svg>
+    </div>
+    <div class="nav-menu">
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#home">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#about">How it’s made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#products">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <ul class="header-buttons__list">
+      <li class="header-menu__btn">
+        <div class="btn-burger">
+          <button
+            class="header-menu__button js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header-menu__burger" width="32" height="32">
+              <use href="/src/images/icon_sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="header-menu__icon">
+        <div class="btn-buy">
+          <button
+            class="header-modal__button"
+            type="button"
+            data-modal-by-now-open1
+          >
+            Buy now
+            <svg class="header-modal__icon" width="12" height="12">
+              <use href="/src/images/icon_sprite.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <svg class="mobile-menu__logo" width="40" height="31">
+    <use href="/src/images/icon_sprite.svg#logo"></use>
+  </svg>
+  <button class="menu-toggle js-close-menu">
+    <svg width="32" height="32">
+      <use href="/src/images/icon_sprite.svg#close-modal"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-nav__list">
+    <li class="mobile-nav__item">
+      <a href="#home" class="mobile-nav__link">Home</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="#about" class="mobile-nav__link">How it’s made?</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="#products" class="mobile-nav__link">Our products</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a href="#contacts" class="mobile-nav__link">Contact</a>
+    </li>
+  </ul>
+
+  <div class="btn-mobile">
+    <button class="header-modal__button" type="button" data-modal-by-now-open2>
+      Buy now
+      <svg class="btn-mobile__icon" width="12" height="12">
+        <use href="/src/images/icon_sprite.svg#arrow-btn"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Hero -->
+
+<section class="hero">
+  <div class="container hero__container">
+    <div>
+      <h1 class="hero-title">
+        ice cream <br />
+        made with <br />
+        <span class="hero__title hero__title--end">passion</span>
+      </h1>
+      <div class="hero__list">
+        <a href="#products" class="hero__btn-link hero__btn-link--border">
+          Products</a
+        >
+        <a href="#about" class="hero__btn-link hero__btn-link--noborder">
+          How it’s made?</a
+        >
+      </div>
+    </div>
+
+    <ul class="hero-statistics__list">
+      <li class="hero-statistics__item">
+        <span
+          class="hero-statistics__number hero-statistics__number-16"
+          data-counter-min="1"
+          data-counter-max="16"
+          data-counter-speed="100"
+          data-counter-increment="1"
+          data-counter-delay="10"
+          >16</span
+        >
+        <span class="hero-statistics__text">cafes</span>
+      </li>
+      <li class="hero-statistics__item">
+        <span
+          class="hero-statistics__number hero-statistics__number-23"
+          data-counter-min="1"
+          data-counter-max="23"
+          data-counter-speed="125"
+          data-counter-increment="1"
+          data-counter-delay="10"
+          >23</span
+        >
+        <span class="hero-statistics__text">food trucks</span>
+      </li>
+    </ul>
+    <div class="proverb">
+      <p class="proverb__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <!-- <button class="hero-arrow" aria-label="about Lorem" type="button"> -->
+      <a class="hero-arrow" href=" ">
+        <svg class="hero-arrow__icon" width="39" height="15">
+          <use href="/src/images/icon_sprite.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Hero img plate -->
+    <picture class="hero__plate">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/hero/img2-lg_@1x.png 1x,
+          /src/images/hero/img2-lg_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/hero/img2-md_@1x.png 1x,
+          /src/images/hero/img2-md_@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        src="/src/images/hero/img2-lg_@1x.png"
+        alt="plate of ice cream"
+        class="hero__img-plate"
+      />
+    </picture>
+
+    <!-- Hero face -->
+    <picture class="hero__ice">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/hero/img1-lg_@1x.png 1x,
+          /src/images/hero/img1-lg_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/hero/img1-md_@1x.png 1x,
+          /src/images/hero/img1-md_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /src/images/hero/img1-sm_@1x.png 1x,
+          /src/images/hero/img1-sm_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="/src/images/hero/img1-sm_@1x.png"
+        alt="ice cream cone"
+        class="header__img-face"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
